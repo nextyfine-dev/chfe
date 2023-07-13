@@ -49,5 +49,3 @@ chfe -h
 ## License
 
 This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
-
-Feel free to customize and enhance the README file to suit your specific requirements and project details.

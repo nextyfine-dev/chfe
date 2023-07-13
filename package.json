@@ -1,6 +1,6 @@
 {
   "name": "chfe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "chfe (Change Files Extensions) is a command-line tool that simplifies the process of changing file extensions within a specified folder. It allows you to quickly and effortlessly update the extensions of multiple files in one go. With chfe, you can easily convert file extensions to match your needs, whether you're migrating to a different file format or simply organizing your files. By providing the folder name, current extension, and new extension as arguments, chfe automates the renaming process, saving you time and effort. Seamlessly integrated with Node.js, chfe is an efficient solution for batch file extension changes.",
   "main": "index.js",
   "author": "nextyfine-dev",
