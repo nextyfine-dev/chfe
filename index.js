@@ -1,5 +1,8 @@
+#!/usr/bin/env node
+
 const fs = require("node:fs");
 const path = require("node:path");
+const packageJson = require("./package.json");
 
 function changeFileExtensions(folderPath, currentExtension, newExtension) {
   fs.readdir(folderPath, (err, files) => {
@@ -36,6 +39,7 @@ function displayHelp() {
     "Usage: chfe -f <folder> -ce <current_extension> -ne <new_extension>"
   );
   console.log("Options:");
+  console.log("  -v, --version                 Display the version");
   console.log("  -h, --help                    Display this help message");
   console.log("  -f, --folder <folder>         Specify the folder name");
   console.log("  -ce, --current-extension <current_extension>");
@@ -50,6 +54,11 @@ const args = process.argv.slice(2);
 
 if (args.includes("-h") || args.includes("--help")) {
   displayHelp();
+  process.exit(0);
+}
+
+if (args.includes("-v") || args.includes("--version")) {
+  console.log(`chfe v-${packageJson.version}`);
   process.exit(0);
 }
 
